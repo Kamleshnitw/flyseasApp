@@ -24,6 +24,10 @@ void main() async{
     ChangeNotifierProvider(create: (context) => di.sl<LocationProvider>()),
     ChangeNotifierProvider(create: (context) => di.sl<BalanceProvider>()),
     ChangeNotifierProvider(create: (context) => di.sl<AuthProvider>()),
+    ChangeNotifierProvider(create: (context) => di.sl<ProfileProvider>()),
+    ChangeNotifierProvider(create: (context) => di.sl<ProductProvider>()),
+
+
 
   ], child: const MyApp()),);
 }
