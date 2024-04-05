@@ -128,6 +128,7 @@ class _NameCityScreenState extends State<NameCityScreen> {
                           isExpanded: true,
                           hint: const Text('Select School'),
                           items: authProvider.cityNameList.map((item) {
+                            print(item);
                             return DropdownMenuItem(
                               child: Text(item),
                               value: item,

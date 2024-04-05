@@ -21,7 +21,7 @@ class AuthProvider extends ChangeNotifier {
   Map<String,String> cityData = {};
   Map<String,String> categoryData = {};
 
-  String _selectedCity = "Select City";
+  String _selectedCity = "Select School";
   String get selectedCity => _selectedCity;
 
   void updateSelectedCity(String city){
