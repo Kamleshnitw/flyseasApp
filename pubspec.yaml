@@ -61,6 +61,10 @@ dependencies:
   url_launcher: ^6.1.6
   flutter_launcher_icons: ^0.11.0
   webview_flutter: ^3.0.4
+  audioplayers: ^1.0.1
+
+
+
 
 flutter_icons:
   android: "ic_launcher"

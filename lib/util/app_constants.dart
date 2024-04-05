@@ -3,7 +3,7 @@ class AppConstants {
 
   static const String appName = 'Flyseas';
   static const String root = 'https://flyseas.in/';
-  static const String api = "admin/api";
+  static const String api = "api";
   static const String baseURL = root+api;
   static const String userId = 'userId';
   static const String name = 'name';

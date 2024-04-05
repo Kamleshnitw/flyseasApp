@@ -35,6 +35,7 @@ class AuthProvider extends ChangeNotifier {
   Future<bool> verifyOTP(String phone,String otp) async{
     _isLoading = true;
     notifyListeners();
+    
     ApiResponse apiResponse = await authRepo.verifyOTP(phone,otp);
     _isLoading = false;
     if (apiResponse.response != null && apiResponse.response?.statusCode == 200) {

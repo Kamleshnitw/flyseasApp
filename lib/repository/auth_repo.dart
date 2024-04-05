@@ -64,6 +64,7 @@ class AuthRepo {
 
   Future<ApiResponse> verifyOTP(String phone, String otp) async {
     try {
+      print(dioClient.baseUrl);
       Response response = await dioClient.post(
         AppConstants.verifyOtpUri,
         data: jsonEncode({"phone":phone,"otp":otp}),
@@ -77,10 +78,12 @@ class AuthRepo {
 
   Future<ApiResponse> loginWithPhone(Map<String,dynamic> login) async {
     try {
+      print(dioClient.baseUrl);
       Response response = await dioClient.post(
         AppConstants.loginUri,
         data: jsonEncode(login),
       );
+      print(response.realUri);
       return ApiResponse.withSuccess(response);
     } catch (e) {
       return ApiResponse.withError(ApiErrorHandler.getMessage(e));
