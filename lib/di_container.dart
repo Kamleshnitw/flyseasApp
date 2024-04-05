@@ -45,6 +45,9 @@ Future<void> init() async {
   // Provider
   sl.registerFactory(() => ProductProvider(productRepo: sl()));
   sl.registerFactory(() => BalanceProvider(balanceRepo: sl()));
+  sl.registerFactory(() => ProfileProvider(profileRepo: sl()));
+  sl.registerFactory(() => OrderProvider(orderRepo: sl()));
+
 
 
   // External
