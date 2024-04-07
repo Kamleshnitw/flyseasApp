@@ -2,7 +2,9 @@
 class AppConstants {
 
   static const String appName = 'Flyseas';
-  static const String root = 'https://flyseas.in/';
+  //static const String root = 'http://10.0.2.2/flyseas/';
+  // static const String root = 'https://flyseas.in/';
+  static const String root = 'https://mapstreak.com/';
   static const String api = "api";
   static const String baseURL = root+api;
   static const String userId = 'userId';
