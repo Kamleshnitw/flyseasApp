@@ -19,7 +19,7 @@ class LoggingInterceptor extends InterceptorsWrapper {
     print("<-- ${response.statusCode} ${response.requestOptions.method} ${response.requestOptions.path}");
 
     String responseAsString = response.data.toString();
-
+    print(response.data);
     if (responseAsString.length > maxCharactersPerLine) {
       int iterations = (responseAsString.length / maxCharactersPerLine).floor();
       for (int i = 0; i <= iterations; i++) {

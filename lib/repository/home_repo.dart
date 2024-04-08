@@ -23,6 +23,7 @@ class HomeRepo {
       Response response = await dioClient.get(
         AppConstants.getHomeUri,
       );
+      
       return ApiResponse.withSuccess(response);
     } catch (e) {
       return ApiResponse.withError(ApiErrorHandler.getMessage(e));

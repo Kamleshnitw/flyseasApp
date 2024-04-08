@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flyseas/data/model/response/bakery_home_response.dart';
@@ -7,7 +6,6 @@ import 'package:flyseas/util/custom_themes.dart';
 import 'package:flyseas/util/dimensions.dart';
 import 'package:flyseas/view/screens/bakery/product_list_screen.dart';
 import 'package:flyseas/view/widgets/kyc_bottom_sheet.dart';
-import 'package:flyseas/view/widgets/show_price_bottom_sheet.dart';
 import 'package:provider/provider.dart';
 
 import '../../../provider/home_provider.dart';
