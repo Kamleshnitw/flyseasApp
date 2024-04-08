@@ -45,8 +45,8 @@ class _PhonePePaymentScreenState extends State<PhonePePaymentScreen> {
             //https://flyseas.in/admin/api/phonepe/walletRedirectUrl?merchant_transaction_id=20230911-22491251&user_id=7
 
             //print(url.contains("https://flyseas.in/admin/api/phonepe/redirectUrl"));
-            if (url.contains("https://flyseas.in/admin/api/phonepe/redirectUrl") ||
-                url.contains("https://flyseas.in/admin/api/phonepe/walletRedirectUrl")) {
+            if (url.contains("https://mapstreak.com/api/phonepe/redirectUrl") ||
+                url.contains("https://mapstreak.com/api/phonepe/walletRedirectUrl")) {
                 parseString();
             }
             print("finish url ==== " + url);
