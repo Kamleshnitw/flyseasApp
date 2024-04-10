@@ -96,22 +96,22 @@ class ColorResources {
 
 
 
-  static const Color gradientOne = Color(0xFFF91496);
-  static const Color gradientTwo = Color(0xFF3B0B45);
+  static const Color gradientOne = Color(0xFF2173c5);
+  static const Color gradientTwo = Color(0xFF0b2642);
   static const Color appBarColor = Color(0xFFFFFFFF);
 
   static const Map<int, Color> colorMap = {
-    50:  Color(0x10FF1499),
-    100: Color(0x20FF1499),
-    200: Color(0x30FF1499),
-    300: Color(0x40FF1499),
-    400: Color(0x50FF1499),
-    500: Color(0x60FF1499),
-    600: Color(0x70FF1499),
-    700: Color(0x80FF1499),
-    800: Color(0x90FF1499),
-    900: Color(0xffFF1499),
+    50:  Color(0xFFbdd9f4),
+    100: Color(0xFF0b2642),
+    200: Color(0xFF12406d),
+    300: Color(0xFF1a5999),
+    400: Color(0xFF2173c5),
+    500: Color(0xFF3a8cde),
+    600: Color(0xFF66a6e5),
+    700: Color(0xFF92bfed),
+    800: Color(0xFFbdd9f4),
+    900: Color(0xFFe9f2fb),
   };
 
-  static const MaterialColor primaryMaterial = MaterialColor(0xFFFF1499, colorMap);
+  static const MaterialColor primaryMaterial = MaterialColor(0xFF1a5999, colorMap);
 }
