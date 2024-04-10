@@ -28,7 +28,7 @@ class _WalletScreenState extends State<WalletScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('${AppConstants.appName}as Wallet'),
+          title: Text('${AppConstants.appName} Wallet'),
         ),
       body: Consumer<BalanceProvider>(builder: (context,balanceProvider,child){
         return ListView(
