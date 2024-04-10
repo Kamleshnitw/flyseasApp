@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flyseas/data/model/base/response_model.dart';
 import 'package:flyseas/provider/home_provider.dart';
 import 'package:flyseas/provider/order_provider.dart';
+import 'package:flyseas/util/app_constants.dart';
 import 'package:flyseas/util/custom_themes.dart';
 import 'package:flyseas/view/screens/order/order_placed.dart';
 import 'package:flyseas/view/screens/payment/phone_pe_payment_web_view.dart';
@@ -306,7 +307,7 @@ class _OrderReviewState extends State<OrderReview> {
                   title: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Flyseas Wallet'),
+                      Text('${AppConstants.appName} Wallet'),
                       Text('₹ ${balanceProvider.balance}')
                     ],
                   ),

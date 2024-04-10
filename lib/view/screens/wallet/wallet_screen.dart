@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flyseas/provider/balance_provider.dart';
 import 'package:flyseas/provider/order_provider.dart';
+import 'package:flyseas/util/app_constants.dart';
 import 'package:flyseas/util/color_resources.dart';
 import 'package:provider/provider.dart';
 
@@ -27,7 +28,7 @@ class _WalletScreenState extends State<WalletScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Flyseas Wallet'),
+          title: Text('${AppConstants.appName}as Wallet'),
         ),
       body: Consumer<BalanceProvider>(builder: (context,balanceProvider,child){
         return ListView(
@@ -55,7 +56,7 @@ class _WalletScreenState extends State<WalletScreen> {
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: const Text('Use Flyseas Wallet For Hassle Free Payments on Checkout',style: TextStyle(fontSize: 12),),
+              child: const Text('Use ${AppConstants.appName} Wallet For Hassle Free Payments on Checkout',style: TextStyle(fontSize: 12),),
             ),
             const SizedBox(height: 16,),
             Padding(

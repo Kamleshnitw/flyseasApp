@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flyseas/util/app_constants.dart';
 import 'package:flyseas/util/color_resources.dart';
 import 'package:flyseas/util/custom_themes.dart';
 import 'package:flyseas/util/dimensions.dart';
@@ -87,7 +88,7 @@ class _TermContinueScreenState extends State<TermContinueScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: Dimensions.PADDING_SIZE_LARGE,vertical: Dimensions.PADDING_SIZE_SMALL),
                 child: ListView(
                   children: [
-                    const Text('Hi, Welcome to Flyseas',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
+                    const Text('Hi, Welcome to ${AppConstants.appName}',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 6,),
                     const Text('To get started, please verify mobile number',style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400),),
                     const SizedBox(height: Dimensions.PADDING_SIZE_DEFAULT,),

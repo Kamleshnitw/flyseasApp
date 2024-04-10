@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flyseas/provider/balance_provider.dart';
 import 'package:flyseas/provider/profile_provider.dart';
+import 'package:flyseas/util/app_constants.dart';
 import 'package:flyseas/util/color_resources.dart';
 import 'package:flyseas/view/global_widget/logout_dialog.dart';
 import 'package:flyseas/view/screens/address/my_address_screen.dart';
@@ -98,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Consumer<BalanceProvider>(builder: (context,balanceProvider,child){
               return ListTile(
                 leading: const Icon(Icons.account_balance_wallet_outlined,size: 18,color: ColorResources.gradientOne),
-                title: const Text("Flyseas Wallet",style: TextStyle(color: ColorResources.gradientOne)),
+                title: const Text("${AppConstants.appName} Wallet",style: TextStyle(color: ColorResources.gradientOne)),
                 trailing: Text('₹ ${balanceProvider.balance}'),
                 onTap: (){
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => const WalletScreen()));
