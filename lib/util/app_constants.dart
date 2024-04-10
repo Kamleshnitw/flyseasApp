@@ -1,7 +1,7 @@
 
 class AppConstants {
 
-  static const String appName = 'Flyseas';
+  static const String appName = 'MapStreak';
   //static const String root = 'http://10.0.2.2/flyseas/';
   // static const String root = 'https://flyseas.in/';
   static const String root = 'https://mapstreak.com/';
