@@ -53,7 +53,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   SizedBox(height: Dimensions.MARGIN_SIZE_EXTRA_LARGE,),
                   Icon(Icons.arrow_back_ios_outlined,color: Colors.white,),
                   SizedBox(height: 60,),
-                  Image.asset(Images.nameLogoImage,height: 42,),
+                  Image.asset(Images.nameLogoImage,height: 50,),
                   SizedBox(height: 30,),
                   Text('Enter mobile number',style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.w600),),
                   const SizedBox(height: 2,),

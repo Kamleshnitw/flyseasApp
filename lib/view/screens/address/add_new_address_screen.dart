@@ -115,7 +115,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_DEFAULT),
                  Text(
-                   'Enter Class & Roll No',
+                   'Enter Class & Section',
                    style: robotoRegular.copyWith(color: ColorResources.getHint(context)),
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
@@ -124,7 +124,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                    textInputAction: TextInputAction.next,
                    focusNode: _zipNode,
                    decoration:  InputDecoration(
-                       hintText: "Enter Class & Roll No",
+                       hintText: "Enter Class & Section",
                        border: OutlineInputBorder(),
                        counterText: "",
                        errorText: locationProvider.isPinCodeFound.isNotEmpty ? locationProvider.isPinCodeFound : null
@@ -139,7 +139,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_DEFAULT),
                  Text(
-                   'City',
+                   'Roll No.',
                    style: robotoRegular.copyWith(color: ColorResources.getHint(context)),
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
@@ -148,23 +148,24 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                    textInputAction: TextInputAction.next,
                    focusNode: _stateNode,
                    decoration: const InputDecoration(
-                       hintText: "City",
+                       hintText: "Roll No.",
                        border: OutlineInputBorder()
                    ),
                    controller: locationProvider.cityController,
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
                  Text(
-                   'State',
+                   'Shift',
                    style: robotoRegular.copyWith(color: ColorResources.getHint(context)),
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
+                 
                  TextField(
                    keyboardType: TextInputType.streetAddress,
                    textInputAction: TextInputAction.next,
                    focusNode: _countryNode,
                    decoration: const InputDecoration(
-                       hintText: "State",
+                       hintText: "Shift",
                        border: OutlineInputBorder()
                    ),
                    controller: locationProvider.stateController,
