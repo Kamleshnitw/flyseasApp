@@ -27,7 +27,7 @@ class _NameCityScreenState extends State<NameCityScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_){
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       getData();
     });
   }
@@ -80,13 +80,13 @@ class _NameCityScreenState extends State<NameCityScreen> {
                 const SizedBox(
                   height: 2,
                 ),
-                const Text(
-                  'Select School for Personalise Experience',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400),
-                ),
+                // const Text(
+                //   'Select School for Personalise Experience',
+                //   style: TextStyle(
+                //       color: Colors.white,
+                //       fontSize: 14,
+                //       fontWeight: FontWeight.w400),
+                // ),
                 const SizedBox(
                   height: 30,
                 ),
@@ -108,12 +108,11 @@ class _NameCityScreenState extends State<NameCityScreen> {
                 const SizedBox(
                   height: Dimensions.MARGIN_SIZE_DEFAULT,
                 ),
-                Consumer<AuthProvider>(builder: (context,authProvider,child){
-                  return  Container(
+                Consumer<AuthProvider>(builder: (context, authProvider, child) {
+                  return Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0)
-                    ),
+                        borderRadius: BorderRadius.circular(20.0)),
                     child: InputDecorator(
                       decoration: const InputDecoration(
                           border: OutlineInputBorder(
@@ -143,7 +142,6 @@ class _NameCityScreenState extends State<NameCityScreen> {
                     ),
                   );
                 }),
-
 
                 const SizedBox(
                   height: 30,
@@ -195,7 +193,8 @@ class _NameCityScreenState extends State<NameCityScreen> {
       ));
       return;
     }
-    if (Provider.of<AuthProvider>(context, listen: false).selectedCity == "Select City") {
+    if (Provider.of<AuthProvider>(context, listen: false).selectedCity ==
+        "Select City") {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text('Please Select City'),
         backgroundColor: Colors.red,
@@ -204,16 +203,17 @@ class _NameCityScreenState extends State<NameCityScreen> {
     }
 
     Map<String, String> loginData = {};
-    loginData['city_id'] = Provider.of<AuthProvider>(context, listen: false).getCityId();
+    loginData['city_id'] =
+        Provider.of<AuthProvider>(context, listen: false).getCityId();
     loginData['name'] = name;
     loginData['phone'] = widget.phone;
 
     ProgressDialog.showLoadingDialog(context);
     await Provider.of<AuthProvider>(context, listen: false)
-        .loginWithPhone(loginData, loginCallback,isOtpVerified: true);
+        .loginWithPhone(loginData, loginCallback, isOtpVerified: true);
   }
 
-  loginCallback(bool isRoute,String errorMessage) {
+  loginCallback(bool isRoute, String errorMessage) {
     if (isRoute) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(errorMessage),
@@ -223,9 +223,11 @@ class _NameCityScreenState extends State<NameCityScreen> {
       ProgressDialog.closeLoadingDialog(context);
       Provider.of<AuthProvider>(context, listen: false).savePreferenceData(
           AppConstants.name, nameController.text.toString());
-      Provider.of<AuthProvider>(context, listen: false).savePreferenceData(AppConstants.city,
+      Provider.of<AuthProvider>(context, listen: false).savePreferenceData(
+          AppConstants.city,
           Provider.of<AuthProvider>(context, listen: false).selectedCity);
-      Provider.of<AuthProvider>(context, listen: false).savePreferenceData(AppConstants.cityId,
+      Provider.of<AuthProvider>(context, listen: false).savePreferenceData(
+          AppConstants.cityId,
           Provider.of<AuthProvider>(context, listen: false).getCityId());
 
       Navigator.pushReplacement(
