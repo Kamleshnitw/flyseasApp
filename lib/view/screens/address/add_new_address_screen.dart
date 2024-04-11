@@ -155,7 +155,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
                  Text(
-                   'Shift',
+                   'Break',
                    style: robotoRegular.copyWith(color: ColorResources.getHint(context)),
                  ),
                  SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
@@ -165,7 +165,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                    textInputAction: TextInputAction.next,
                    focusNode: _countryNode,
                    decoration: const InputDecoration(
-                       hintText: "Shift",
+                       hintText: "Break 1 / Break 2",
                        border: OutlineInputBorder()
                    ),
                    controller: locationProvider.stateController,

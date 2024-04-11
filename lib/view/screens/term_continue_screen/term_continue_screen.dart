@@ -73,8 +73,10 @@ class _TermContinueScreenState extends State<TermContinueScreen> {
         children: [
           Image.asset(Images.backgroundImage,fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
           Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * .2,left: MediaQuery.of(context).size.width*.33),
-              child: Image.asset(Images.splashLogo,fit: BoxFit.contain)),
+            // width: MediaQuery.of(context).size.width,
+            
+              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * .2,left: MediaQuery.of(context).size.width*.26),
+              child: Image.asset(Images.splashLogo,fit: BoxFit.contain,width: 200,)),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(

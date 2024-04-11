@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
         fit: BoxFit.cover,
         onLoaded: (composition) {
           _controller
-            ..duration = composition.duration
+            ..duration = composition.duration * 0.2
             ..forward().whenComplete((){
 
               if (Provider.of<AuthProvider>(context, listen: false).isLoggedIn()) {
