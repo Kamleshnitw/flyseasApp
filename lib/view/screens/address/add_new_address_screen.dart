@@ -165,7 +165,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                    textInputAction: TextInputAction.next,
                    focusNode: _countryNode,
                    decoration: const InputDecoration(
-                       hintText: "Break 1 / Break 2",
+                       hintText: "Break 1/2",
                        border: OutlineInputBorder()
                    ),
                    controller: locationProvider.stateController,
