@@ -193,10 +193,10 @@ class _WalletScreenState extends State<WalletScreen> {
       showCustomSnackBar("Please Enter Amount First", context);
       return;
     }
-    /*if((int.tryParse(amount) ?? 0)<3000){
-      showCustomSnackBar("Minimum Recharge Amount ₹3000 ", context);
+    if((int.tryParse(amount) ?? 0)<1999){
+      showCustomSnackBar("Minimum Recharge Amount ₹1999 ", context);
       return;
-    }*/
+    }
     var orderProvider = Provider.of<BalanceProvider>(context,listen: false);
     // get Online URL First
     ResponseModel re = await orderProvider.rechargeWallet(amount);
