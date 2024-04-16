@@ -52,7 +52,7 @@ android {
         applicationId "com.webcare.flyseas"
         minSdkVersion 33
         targetSdkVersion 33
-        versionCode flutterVersionCode.toInteger()
+        versionCode 10
         versionName flutterVersionName
         multiDexEnabled true
     }
